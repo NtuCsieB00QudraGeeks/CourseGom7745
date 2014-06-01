@@ -1,0 +1,93 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+<hr>
+<h2>CourseGom</h2>
+<hr style="border:1px dotted #036" />
+<form action="/upload" method="post" name="form1">
+    帳號：<input type = "text" id = "account" value = "aaa"></br>
+    密碼：<input type = "text" id = "password" value = "bbb"></br>
+	<input type = "button" value = "登入" onClick = "register(2)"></br>
+</form>
+
+<form name="form2">
+	使用者名稱：<input type="text" name="account" value="aaa" /><br>  
+	電子郵件：<input type="text"  name="password" value="bbb"/><br>  
+	<input type="button" value="註冊我的帳號" onClick = "register(1)" ><br> 
+</from>
+<form name="form3">
+	test：<input type="number" name="qq" value=0 id = "myid" /><br>  
+</from>  
+<script type="text/javascript" >  
+    function register(l_r) {
+    	/*if(l_r == 1)
+    		alert("register");
+    	else 
+    		alert("login");*/
+		$.ajaxSetup({
+			// Disable caching of AJAX responses
+			cache: false
+		});
+		
+		if(l_r==1)
+			oform = document.forms["form2"];
+		else 
+			oform = document.forms["form1"];
+		var jqxhr = 
+	    $.ajax({
+	    	url: "/upload",
+	        type: 'get',
+	        data: {
+	        	l_r : l_r,
+	            username : oform.elements.account.value,
+	            password : oform.elements.password.value
+	        },
+	        success: function(responses) { 
+	        	console.log(responses);
+	        	//document.write(responses); 
+	        },
+	    	error: function(){ 
+	    		alert("Error"); 
+	    	},
+	     	complete: function(){ 
+	        	alert("complete");
+	        	//oform = document.forms["form3"]; 
+	        	//oform.elements.qq.value=1;
+	        	$('#myid').val(1);
+	        }
+	    });
+	 } 
+	 /*function login() {
+    	alert("login");
+		$.ajaxSetup({
+			// Disable caching of AJAX responses
+			cache: false
+		});
+		var oform = document.forms["form1"];
+		var jqxhr = 
+	    $.ajax({
+	    	url: "/upload",
+	        type: 'get',
+	        data: {
+	            username : oform.elements.account.value,
+	            password : oform.elements.password.value
+	        },
+	        success: function(responses) { 
+	        	console.log(responses);
+	        	//document.write(responses); 
+	        },
+	    	error: function(){ 
+	    		alert("Error"); 
+	    	},
+	     	complete: function(){ 
+	        	alert("complete"); 
+	        }
+	    });
+	 }*/     
+</script>
+
+</body>
+</html>
