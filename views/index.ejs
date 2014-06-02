@@ -17,11 +17,7 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/js/ie-emulation-modes-warning.js"></script>
-    <script src="/js/contentflow.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/js/ie10-viewport-bug-workaround.js"></script>
+    
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,18 +27,16 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/carousel.css" rel="stylesheet">
-    <script type="text/javascript">
-        var cf = new ContentFlow('contentFlow', {reflectionColor: "#000000"});
-    </script>
+    
   </head>
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
+    <!-- <div class="navbar-wrapper">
       <div class="container">
 
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
+          <div style="background-color:rgba(0,0,0,0.2);" class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -75,12 +69,12 @@
         </div>
 
       </div>
-    </div>
+    </div> -->
     
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div style="background-image:url(/img/golden_sun_rays_field-wallpaper-2560x1920.jpg);background-size:contain;" id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -89,32 +83,32 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img style="background-size:cover;" src="/img/backgroundGom.jpg" alt="First slide">
+          <img style="color:rgba(0,0,0,0);"src="/img/golden_sun_rays_field-wallpaper-2560x1920.jpg" alt="First slide">
           <div class="container">
-            <div class="carousel-caption">
-              <h1>Course Gom</h1>
+            <div style="margin-bottom:70px;" class="carousel-caption">
+              <h1 style="font-size:70px;">Course Gom</h1>
+              <p>台大課程即時化互動修課平台。</p>
+              <p><a href="#nowCourse" id="lagigi" class="btn btn-lg btn-primary">現在就喇！</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img style="background-size:cover;" src="/img/work_in_progress-wallpaper-2560x1600.jpg" alt="Second slide">
+          <div class="container">
+            <div style="margin-bottom:70px;" class="carousel-caption">
+              <h1 style="font-size:70px;"><%= anotherGom %></h1>
               <p>即時回報課堂實況，臨時點名絕不漏點，以及擁有大舌頭。</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">現在就喇！</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">了解更多！</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img style="background-size:cover;" src="/img/429441_396740237068494_1396179813_n.jpg" alt="Second slide">
+          <img style="background-size:cover;" src="/img/facebook.jpg" alt="Third slide">
           <div class="container">
-            <div class="carousel-caption">
-              <h1><%= anotherGom %></h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img style="background-size:cover;" src="/img/111.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            <div style="margin-bottom:50px;" class="carousel-caption">
+              <h1 style="font-size:70px;margin-bottom:50px;" >只需登入</h1>
+              <p></p>
+              <p><a style="margin-top:20px;" class="btn btn-lg btn-primary" href="#" role="button">現在登入！</a></p>
             </div>
           </div>
         </div>
@@ -129,8 +123,8 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
-
+    <div id="nowCourse" class="container marketing">
+      <h1>看看現在有哪些已創立同步CEIBA的課程。</h1>
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div id="contentFlow" class="ContentFlow">
@@ -140,7 +134,7 @@
         <div class="flow">
 
             <div class="item">
-                <img class="content" src="/img/111.jpg"/>
+                <img class="content" src="/img/11.jpg"/>
                 <div class="caption">pic0: some stripes</div>
             </div>
             <div class="item">
@@ -167,9 +161,9 @@
 
         </div>
         <div class="globalCaption"></div>
-        <div class="scrollbar">
+        <!-- <div class="scrollbar">
             <div class="slider"><div class="position"></div></div>
-        </div>
+        </div> -->
 
         </div>
       </div><!-- /.row -->
@@ -233,5 +227,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/docs.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/ie-emulation-modes-warning.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
+    <script src="/js/contentflow.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/js/ie10-viewport-bug-workaround.js"></script>  
+    <script type="text/javascript">
+        var cf = new ContentFlow('contentFlow', {reflectionColor: "#000000"});
+    </script>
   </body>
 </html>

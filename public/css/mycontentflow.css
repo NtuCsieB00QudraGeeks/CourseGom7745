@@ -76,11 +76,11 @@
     /* ----- global caption ----- */
     .ContentFlow .globalCaption {
         text-align: center;
-        font-weight: bold;
-        color: white;
-        font-size: 14px;
-        height: 20px;
-        margin: 2em auto;
+        font-weight: 300;
+        color: #333;
+        font-size: 30px;
+        height: 30px;
+        margin: 0 auto;
     }
         .ContentFlow .globalCaption .caption {
         }

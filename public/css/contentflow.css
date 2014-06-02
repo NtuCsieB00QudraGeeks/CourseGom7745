@@ -15,7 +15,7 @@
     max-height: 30%;
     bottom: 10%;
     background: url(img/1x1_0.5_black.png);
-    width: 100%;
+    width: 80%;
     position: absolute;
     display: none;
 }
@@ -64,10 +64,10 @@
 
 .ContentFlow .globalCaption {
     text-align: center;
-    font-weight: 700;
-    color: #FFF;
-    font-size: 14px;
-    height: 20px;
+    font-weight: 400;
+    color: #333;
+    font-size: 30px;
+    height: 30px;
     position: relative;
     z-index: 1;
     margin: 2em auto;
@@ -156,9 +156,9 @@
 }
 
 .ContentFlow .flow .item .caption a,.ContentFlow .flow .item .caption a:link,.ContentFlow .flow .item .caption a:visited,.ContentFlow .flow .item .caption a:active,.ContentFlow .flow .item .caption a:hover,.ContentFlow .globalCaption .caption a,.ContentFlow .globalCaption .caption a:link,.ContentFlow .globalCaption .caption a:visited,.ContentFlow .globalCaption .caption a:active,.ContentFlow .globalCaption .caption a:hover {
-    color: #FFF;
+    color: #333;
     font-size: 0.8em;
-    font-style: italic;
+    font-style: Helvetica;
     text-decoration: none;
 }
 
