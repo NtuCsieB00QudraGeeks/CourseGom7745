@@ -555,9 +555,9 @@ ContentFlow.prototype = {
         endOpacity: 1,
         startItem: "center",
         scrollInFrom: "pre",
-        flowSpeedFactor: 0.02,
-        flowDragFriction: 3,
-        scrollWheelSpeed: 0.7,
+        flowSpeedFactor: 1,
+        flowDragFriction: 1,
+        scrollWheelSpeed: 0.2,
         keys: {
             13: function () {
                 this.conf.onclickActiveItem(this._activeItem)
