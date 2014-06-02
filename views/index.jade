@@ -1,5 +1,79 @@
-extends layout
+doctype html
+html
+	head
+		title #{title}
+		meta(charset='utf-8')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="shortcut icon" href="favicon.ico")
+		link(href="/css/bootstrap.min.css" rel="stylesheet")
+		link(href="/css/navbar-fixed-top.css" rel="stylesheet")
+		link(href="/css/style.css" rel="stylesheet")
 
-block content
-  h1= title
-  p Welcome to #{title}
+
+		script(type='text/javascript', src="/js/bootstrap.min.js")
+		script(type='text/javascript', src="/js/ie-emulation-modes-warning.js")
+		script(type='text/javascript', src="/js/ie10-viewport-bug-workaround.js")
+		script(type='text/javascript', src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+
+	body
+		header.headyo
+
+		//- .navbar.navbar-default.navbar-fixed-top(style="background-color:rgba(0,0,0,0.7);" role="navigation")
+		//- 	.container
+		//- 		.navbar-header
+		//- 			button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-collapse")
+		//- 				span.sr-only.Toggle.navigation
+		//- 				span.icon-bar
+		//- 				span.icon-bar
+		//- 				span.icon-bar
+		//- 			a.navbar-brand(href="#") Project name
+		//- 		.navbar-collapse.collapse
+		//- 			ul.nav.navbar-nav
+		//- 				li.active
+		//- 					a(href='#') Home
+		//- 				li
+		//- 					a(href='#about') About
+		//- 				li
+		//- 					a(href='#contact') Contact
+		//- 					ul.dropdown-menu(role='menu')
+		//- 						li
+		//- 							a(href='#') Action
+		//- 						li
+		//- 							a(href='#') Another action
+		//- 						li
+		//- 							a(href='#') Something else here
+		//- 						li.divider
+		//- 						li.dropdown-header.Nav.header
+		//- 						li
+		//- 							a(href='#') Separated link
+		//- 						li
+		//- 							a(href='#') One more separated link
+		//- 			ul.nav.navbar-nav.navbar-right
+		//- 				li
+		//- 					a(href='#') Default
+		//- 				li
+		//- 					a(href='#') Static top
+		//- 				li.active
+		//- 					a(href='#') Fixed top
+				// /.nav-collapse
+		section.transparent1
+			p.title1 CourseGom
+			.container
+				.jumbotron
+					p(style="text-align:center;") 即時回報課堂實況，臨時點名絕不漏點，以及擁有大舌頭。
+					p(style="text-align:center;")
+						a.btn.btn-lg.btn-primary(href='#', role='button') 馬上開喇
+
+
+
+		//- section.num1
+		//- 	.container
+		//- 		.jumbotron
+		//- 			h1 CourseGom
+		//- 			p 即時回報課堂實況，臨時點名絕不漏點，以及擁有大舌頭。
+		//- 			p
+		//- 				a.btn.btn-lg.btn-primary(href='#', role='button') 馬上開喇
+		// /container
+
+

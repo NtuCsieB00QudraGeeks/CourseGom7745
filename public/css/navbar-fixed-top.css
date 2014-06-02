@@ -1,0 +1,44 @@
+body {
+  	/*min-height: 2000px;*/
+  	/*padding-top: 0px;*/
+}
+
+.container{
+}
+
+.jumbotron{
+	background-color: rgba(0,0,0,0.6);
+	/*margin-top: 800px;*/
+	border-radius: 20px;
+	color: orange;
+}
+
+.headyo{
+	width: 100%;
+	height: 700px;
+	background: url(/img/1925136_823905424291054_219165051440654672_n.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: fixed;
+	z-index: -1;
+	/*-webkit-transform: translate3d(0, 0, 0);*/
+}
+
+.transparent1{
+	height: 700px;
+}
+
+.num1{
+	background-color: rgba(1,1,1,0.7); 
+}
+
+
+.title1{
+	color: orange;
+	font-weight: 200;
+	font-size: 120px;
+	text-align: center;
+	padding: 20px;
+	padding-top: 50px;
+}
