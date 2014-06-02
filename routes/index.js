@@ -7,7 +7,7 @@ var express = require('express');
 // });
 
 exports.load = function(req, res){
-	res.render('index', {'title': 'CourseGom', 'anotherGom': '讓修課變得更輕鬆。'});
+	res.render('index', {'topic': 'CourseGom1', 'title': 'CourseGom', 'anotherGom': '讓修課變得更輕鬆。'});
 };
 
 exports.lala = function(req, res){

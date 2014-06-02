@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <title>Off Canvas Template for Bootstrap</title>
+    <title>Course</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -31,27 +31,8 @@
   </head>
 
   <body>
-    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">舌頭肌概論</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </div><!-- /.navbar -->
-
+    
+    <%- include navbar %>
     <div class="container">
 
       <div class="row row-offcanvas row-offcanvas-right">
@@ -60,9 +41,10 @@
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
-          <div class="jumbotron">
-            <h1>舌頭肌概論</h1>
-            <p>這堂課會帶你一步一步開發你的舌頭肌，正確的理論，循序漸進的練習基本技巧，相信你也可以成為喇肌高手！</p>
+          <div style="margin-top:20px;" class="jumbotron">
+            <img style="width:40%; height:40%;border-radius: 20px;" src="/img/longTongue.png" alt="tongue">
+            <h1 >舌頭肌概論</h1>
+            <p >這堂課會帶你一步一步開發你的舌頭肌，正確的理論，循序漸進的練習基本技巧，相信你也可以成為喇肌高手！</p>
           </div>
           <div class="row">
             <div class="col-6 col-sm-6 col-lg-4">
@@ -97,8 +79,11 @@
             </div><!--/span-->
           </div><!--/row-->
         </div><!--/span-->
+  
 
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+
+        <!-- Alex Chang Socket io chat room-->
+        <div style="margin-top:60px;" class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
           <div class="list-group">
             <a href="#" class="list-group-item active">Link</a>
             <a href="#" class="list-group-item">Link</a>
