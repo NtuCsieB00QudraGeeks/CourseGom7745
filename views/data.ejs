@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<title>課程登入</title>
+</head>
+<body bgcolor="#ffffff">
+	<div id = "courseid">
+		學期：<input type = "text" id = "semesterid" name = "semestername" value = "" /><br>
+		課名：<input type = "text" id = "classid" name = "classname" value = "" /><br>
+		上課時間：<input type = "text" id = "timeid" name = "timename" value = "" /><br>
+		教授：<input type = "text" id = "professorid" name = "professorname" value = "" /><br>
+		<input type = "submit" value = "確認" /><br>
+	</div>
+
+	<script type = "text/javascript">
+	$(function(){
+        $('#courseid input[type=submit]').click(function(e){
+        	e.preventDefault();
+        	var user = {};
+        	user.semester = $('#semesterid').val();
+        	user.name = $('#classid').val();
+        	user.time = $('#timeid').val();
+        	user.teacher = $('#professorid').val();
+        	$.post("/create_course", user, function(data){
+            	alert(data.confirm);
+            });
+        });
+    });
+	</script>
+</body>
+</html>

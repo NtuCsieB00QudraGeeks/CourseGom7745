@@ -23,7 +23,9 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index.load);
+app.get('/', index.load);
+app.get('/create_load', index.create_load);
+app.post('/create_course', index.create_course);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
