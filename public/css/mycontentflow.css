@@ -75,10 +75,12 @@
 
     /* ----- global caption ----- */
     .ContentFlow .globalCaption {
+        font-family: Verdana;
+        margin-top: 20px;
         text-align: center;
         font-weight: 300;
         color: #333;
-        font-size: 30px;
+        font-size: 40px;
         height: 30px;
         margin: 0 auto;
     }
